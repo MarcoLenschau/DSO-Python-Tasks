@@ -8,6 +8,7 @@ This repository contains the code for all python tasks of the DevSecOps course.
 
 - Module 3 - Python Fundamentals
 - Module 4 - Pentesting Tools in Python
+- Dockerfile - Used as a simple target machine to try ssh connection on, takes two build arguments, PORT for ssh service and PASSWORD for the root user
 
 ## Module 3
 
