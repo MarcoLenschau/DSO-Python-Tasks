@@ -3,13 +3,14 @@ import os
 
 class File:
     def __init__(self, directory):
-        self.directory = directory
-        self.files = []
-        self.check_csv()
-        self.read_files()
-        if directory is not None:
+        if directory is None:
             print("Please provide a directory containing CSV files using the -d argument.")
-
+        else:
+            self.directory = directory
+            self.files = []
+            self.check_csv()
+            self.read_files()
+            
     def read(self, file):
         return pd.read_csv(file)
     
