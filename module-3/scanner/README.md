@@ -14,11 +14,15 @@
 
 1. Clone the repository or download the script:
     ```
-        git clone https://github.com/MarcoLenschau/
-        cd netzscanner
+        git clone https://github.com/MarcoLenschau/DSO-Python-Tasks/tree/network-scanner/module-3/scanner
+    ```
+    
+2. Change the directory:
+    ```
+        cd scanner
     ```
 
-2. Install requirements:
+3. Install requirements:
     ```
         pip install -r requirements.txt
     ```
