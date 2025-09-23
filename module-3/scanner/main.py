@@ -1,9 +1,7 @@
 from scanner import Scanner
-
-NETWORK = "192.168.13.0"
-SUBNET = "28"
+from parser import Parser
 
 if __name__ == "__main__":
-    scanner = Scanner(NETWORK, SUBNET)
-    targets = scanner.targets   
-    scanner.extract_as_csv(targets)
+    PARSER = Parser().create_parser()
+    ARGS = PARSER.parse_args()
+    SCANNER = Scanner(ARGS.network, ARGS.subnet, ARGS.filename)  
