@@ -8,7 +8,9 @@
 
 ### Prerequisites
 
-- Python
+- Python 3.8
+- ipaddress 1.0.23
+- pythonping 1.1.4
 
 ### Installation
 
@@ -28,3 +30,18 @@
     ```
 
 ### Quickstart
+
+1. Create a virtual enviroment:
+    ```
+        python -m venv venv
+    ```
+    
+2. Active the virtual enviroment:
+    ```
+        source venv/bin/activate
+    ```
+
+3. Run the application:
+    ```
+        python3 main.py -n {NETWORK} -s {SUBNET} -csv {OUTPUT-FILE}
+    ```
