@@ -2,10 +2,10 @@ from pythonping import ping
 import ipaddress, csv
 
 class Scanner:
-    def __init__(self, **kargs):
-        self.network = kargs.get("network")
-        self.subnet = kargs.get("subnet")
-        self.filename = kargs.get("filename")
+    def __init__(self, **kwargs):
+        self.network = kwargs.get("network")
+        self.subnet = kwargs.get("subnet")
+        self.filename = kwargs.get("filename")
         self.ip_list = []
         self.__targets = []
         self.status = ""
